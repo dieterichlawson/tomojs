@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualizing Tomography</title>
+  <link href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='range-slider.css' type='text/css' />
+  <link rel='stylesheet' href='tomography.css' type='text/css' />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+  <div class='container'>
+    <div class='row col-xs-12'>
+      <h1>Visualizing Tomography</h1>
+      <br/>
+    </div>
+    <div class='row'>
+      <div class='col-xs-7'>
+        <div id='tomo-vis'>
+          <img id="theimage" src="img/A.png">
+        </div>
+      </div>
+      <div class='col-xs-5'>
+        <div class='row'>
+          TODO: Description
+          <hr>
+        </div>
+        <div class='row'>
+          <h3 class='data-header'>Options</h3>
+          Number of line integrals <div class='range-slider' id='range-slider'></div>
+          <br>
+          <a class='new-img btn btn-danger'>New image</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </div>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+  <script src='numeric-1.2.6.min.js'></script>
+  <script src='range-slider.js'></script>
+  <script src='tomo-linalg.js'></script>
+  <script src='tomo-math.js'></script>
+  <script src='tomography.js'></script>
+</body>
+</html>
